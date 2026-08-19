@@ -61,7 +61,7 @@ settings below.
 | Time | `0:30:00` |
 | Working directory | `/project/$PROJECT` |
 | Python | `lumi-multitorch (PyTorch, LUMI AI Factory)` |
-| Module version | default |
+| Module version | `lumi-multitorch/default` |
 | Enable virtual environment | **Do not** select this |
 
 Press **Launch**, wait for the session to start, then press
@@ -75,7 +75,9 @@ Press **Launch**, wait for the session to start, then press
 
 ### Step 3: Run the notebook
 
-Open [`01-pytorch-mnist-mlp.ipynb`](01-pytorch-mnist-mlp.ipynb) and follow along. The notebook trains a **multi-layer perceptron (MLP)** to classify handwritten digits from the [MNIST](https://en.wikipedia.org/wiki/MNIST_database) dataset using PyTorch.
+In the Jupyter file browser, first open the folder named after your username
+(the one you created in Step 1). Then open
+[`01-pytorch-mnist-mlp.ipynb`](01-pytorch-mnist-mlp.ipynb) and follow along. The notebook trains a **multi-layer perceptron (MLP)** to classify handwritten digits from the [MNIST](https://en.wikipedia.org/wiki/MNIST_database) dataset using PyTorch.
 
 > [!TIP]
 > If parts of the notebook disappear as you scroll, this is a
