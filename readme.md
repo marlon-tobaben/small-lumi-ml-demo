@@ -9,7 +9,7 @@ A short, hands-on introduction to running deep-learning workloads on the
 | **[Part 2](#part-2-slurm-job-exercise)** | Train image classifiers on two datasets | Batch jobs via Slurm |
 
 > [!NOTE]
-> Throughout this demo the course project is `project_465002757`. Wherever you
+> Throughout this demo the course project is `project_462001444`. Wherever you
 > see `$USER` in a command, it is automatically replaced by your own username,
 > so you can copy the commands as-is.
 
@@ -32,15 +32,15 @@ keeps your files separate from the other course participants.
    project and scratch areas:
 
    ```bash
-   mkdir -p /project/project_465002757/$USER
-   mkdir -p /scratch/project_465002757/$USER
+   mkdir -p /project/project_462001444/$USER
+   mkdir -p /scratch/project_462001444/$USER
    ```
 
 4. Clone the [exercise repository](https://github.com/marlon-tobaben/small-lumi-ml-demo)
    into your project folder:
 
    ```bash
-   git clone https://github.com/marlon-tobaben/small-lumi-ml-demo.git /project/project_465002757/$USER
+   git clone https://github.com/marlon-tobaben/small-lumi-ml-demo.git /project/project_462001444/$USER
    ```
 
 ### Step 2: Start an interactive Jupyter session
@@ -53,7 +53,7 @@ settings below.
 
 | Setting | Value |
 | --- | --- |
-| Project | `project_465002757 (LUST Training ...)` |
+| Project | `project_462001444 (LUMI AI Factory Training)` |
 | Reservation | None |
 | Partition | `small-g` |
 | Number of CPU cores | `7` |
@@ -61,7 +61,7 @@ settings below.
 | Time | `0:30:00` |
 | Working directory | `/project/$PROJECT` |
 | Python | `lumi-multitorch (PyTorch, LUMI AI Factory)` |
-| Module version | default |
+| Module version | `lumi-multitorch/default` |
 | Enable virtual environment | **Do not** select this |
 
 Press **Launch**, wait for the session to start, then press
@@ -75,7 +75,9 @@ Press **Launch**, wait for the session to start, then press
 
 ### Step 3: Run the notebook
 
-Open [`01-pytorch-mnist-mlp.ipynb`](01-pytorch-mnist-mlp.ipynb) and follow along. The notebook trains a **multi-layer perceptron (MLP)** to classify handwritten digits from the [MNIST](https://en.wikipedia.org/wiki/MNIST_database) dataset using PyTorch.
+In the Jupyter file browser, first open the folder named after your username
+(the one you created in Step 1). Then open
+[`01-pytorch-mnist-mlp.ipynb`](01-pytorch-mnist-mlp.ipynb) and follow along. The notebook trains a **multi-layer perceptron (MLP)** to classify handwritten digits from the [MNIST](https://en.wikipedia.org/wiki/MNIST_database) dataset using PyTorch.
 
 > [!TIP]
 > If parts of the notebook disappear as you scroll, this is a
@@ -103,7 +105,7 @@ The second dataset, **German traffic signs** (`gtsrb`), is introduced in
 
 > [!NOTE]
 > Both datasets are already staged for the course under
-> `/scratch/project_465002757/data` (in the `dogs-vs-cats/train-2000` and
+> `/scratch/project_462001444/data` (in the `dogs-vs-cats/train-2000` and
 > `gtsrb/train-5535` subfolders). `run.sh` sets the `DATADIR` environment
 > variable to this location automatically, so you do not need to download
 > anything. If a run stops with `Please set DATADIR environment variable!` or a
@@ -117,7 +119,7 @@ The second dataset, **German traffic signs** (`gtsrb`), is introduced in
 3. Navigate to your exercise directory:
 
    ```bash
-   cd /project/project_465002757/$USER
+   cd /project/project_462001444/$USER
    ```
 
 ### Task 1: Dogs vs. cats

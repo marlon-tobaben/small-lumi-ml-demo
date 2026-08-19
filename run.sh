@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=project_465002757 # Project account used for computing resources allocation
+#SBATCH --account=project_462001444 # Project account used for computing resources allocation
 #SBATCH --partition=small-g # Partition/queue to run the job (GPU partition)
 #SBATCH --ntasks=1 # Number of tasks
 #SBATCH --cpus-per-task=7 # Number of CPU cores allocated to the task
