@@ -58,6 +58,7 @@ settings below.
 | Partition | `small-g` |
 | Number of CPU cores | `7` |
 | Memory (GB) | `16` |
+|Number of GPUs (MI250 GCDs)| `1`|
 | Time | `0:30:00` |
 | Working directory | `/project/$PROJECT` |
 | Python | `lumi-multitorch (PyTorch, LUMI AI Factory)` |
